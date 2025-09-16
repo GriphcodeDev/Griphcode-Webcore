@@ -1,0 +1,55 @@
+
+@font-face {
+    font-family: bumbbled;
+    src: url("Bumbbled.otf");
+}
+
+* {
+    font-family: bumbbled;
+    font-weight: 100;
+}
+
+body {
+    background-image: url(/assets/background1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+#nav, a {
+    
+    text-decoration: none;
+    text-align: center;
+    word-spacing: 20px;
+    background-image: url(assets/clouds.pngs);
+
+
+}
+
+#main {
+    text-align: center;
+    font-size: 25px;
+    width: auto;
+    
+    
+    
+}
+
+#blsm {
+    float: right;
+}
+
+
+#background {
+    background-color: lightpink;
+}
+
+
+#colorchange {
+    background-color: pink;
+    border-radius: 20px;
+    border-style: dashed;
+    
+    
+}
