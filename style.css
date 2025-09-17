@@ -10,6 +10,8 @@ body {
     
 }
 
+
+
 #navigation {
     list-style-image: url(/assets/listitemrezise.gif);
     font-weight: bold;
@@ -72,6 +74,11 @@ a {
     border-style: outset;
 
     background-color: white;
+}
+
+#password:hover {
+    background-color: darkblue;
+    color: yellow;
 }
 
 #terminal {
