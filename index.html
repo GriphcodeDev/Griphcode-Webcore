@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Griphcodes computer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/DancingGirl.gif" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
 
@@ -62,9 +63,9 @@
     <div class="borderDiv">
     <div id="main">
         
-        <h2>Griphcode</h2>
+        <h1 id="intro">Griphcode</h1>
 
-        <p>Hello my name is griphcode. I am a student that attends Web development and programming classes.
+        <p id="info">Hello my name is Griphcode. I am a student that attends Web development and programming classes.
             I have a big passion for creating digital stuff. I Mainly focus on web development because i find that it's really interesting how you can create awesome websites like this exactly like how you would paint a painting.
             
 
@@ -72,7 +73,7 @@
         </p>
         <br>
         
-        <p translate="no">
+        <p>
             こんにちは、griphcodeです。Web開発とプログラミングのクラスに通っている学生です。
             デジタルなものを作ることに大きな情熱を持っています。主にWeb開発に力を入れているのは、まるで絵を描くように素晴らしいWebサイトを作れるのが本当に面白いと感じているからです。
         </p>
@@ -88,7 +89,7 @@
         
         
          
-         <img src="assets/DancingGirl.gif" alt="Link">
+         <img class="assetlib" src="assets/DancingGirl.gif" alt="Link">
 
 
         
@@ -119,30 +120,39 @@
     </div>
 
 
+<div id="drawing">
+    <h2>Draw here! (Feature coming soon)</h2>
 
+    <canva width="300"></canvas>
+</div>
 
 
     
     <div id="commits">
         <script>
-const user = "griphcodedev";
-const repo = "Griphcode-Webcore";
-const commitsContainer = document.getElementById("commits");
+        const user = "griphcodedev";
+        const repo = "Griphcode-Webcore";
+        const commitsContainer = document.getElementById("commits");
 
-fetch(`https://api.github.com/repos/${user}/${repo}/commits`)
-  .then(res => res.json())
-  .then(data => {
-    commitsContainer.innerHTML = data.slice(0, 5).map(commit => ` 
-    <div>
-        <strong>${commit.commit.author.name}</strong>: 
-        ${commit.commit.message} 
-        <a href="${commit.html_url}" target="_blank">View</a>
-      </div>
-    `).join('');
-  })
-  .catch(err => console.error(err));
-</script>
+        fetch(`https://api.github.com/repos/${user}/${repo}/commits`)
+        .then(res => res.json())
+        .then(data => {
+            commitsContainer.innerHTML = data.slice(0, 5).map(commit => ` 
+            <div>
+                <strong>${commit.commit.author.name}</strong>: 
+                ${commit.commit.message} 
+                <a href="${commit.html_url}" target="_blank">View</a>
+            </div>
+            `).join('');
+        })
+        .catch(err => console.error(err));
+        </script>
     </div>
+
+
+
+
+    
 
     <script src="goofy.js"></script>
     <script>hljs.highlightAll();</script>

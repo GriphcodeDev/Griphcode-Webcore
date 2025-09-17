@@ -2,6 +2,7 @@
     font-family: 'Courier New', Courier, monospace;
     cursor: url(https://cur.cursors-4u.net/anime/ani-6/ani549.cur), auto !important;
     
+    
 }
 
 body {
@@ -63,6 +64,16 @@ a {
     
 }
 
+#drawing {
+    color: black;
+     padding: 2px;
+    border-width: 40px;
+    border-image: url(/assets/border.png) 30% repeat;
+    border-style: outset;
+
+    background-color: white;
+}
+
 #terminal {
     
     
@@ -74,7 +85,32 @@ a {
     
 }
 
-audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
-                background-color: rgb(224, 125, 211);
-                
+#info {
+    background-color: darkblue;
+    
 }
+
+#info:hover {
+    background-color: red;
+    cursor: url(https://cur.cursors-4u.net/games/gam-9/gam858.ani), url(https://cur.cursors-4u.net/games/gam-9/gam858.png), auto !important;
+}
+
+
+#intro:hover {
+    
+}
+
+
+
+
+
+.assetlib {
+    padding: 1px;
+    border-width: 40px;
+    border-image: url(/assets/terminal.png) 30% repeat;
+    border-style: outset;
+    background-color: darkblue;
+    
+    
+}
+
