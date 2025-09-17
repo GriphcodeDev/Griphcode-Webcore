@@ -1,55 +1,79 @@
-
-@font-face {
-    font-family: bumbbled;
-    src: url("Bumbbled.otf");
-}
-
 * {
-    font-family: bumbbled;
-    font-weight: 100;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: url(https://cur.cursors-4u.net/anime/ani-6/ani549.cur), auto !important;
+    
 }
 
 body {
-    background-image: url(/assets/background1.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-image: url(assets/starynight.gif);
     
 }
 
-#nav, a {
+#navigation {
+    list-style-image: url(/assets/listitemrezise.gif);
+    font-weight: bold;
+    background-color: darkblue;
     
-    text-decoration: none;
-    text-align: center;
-    word-spacing: 20px;
-    background-image: url(assets/clouds.pngs);
-
-
 }
 
 #main {
-    text-align: center;
-    font-size: 25px;
-    width: auto;
-    
-    
+    color: white;
+    font-weight: bold;
+    background-image: url(assets/sparkles.gif);
     
 }
 
-#blsm {
+#bottom {
+    padding: 2px;
+    border-width: 40px;
+    border-image: url(/assets/border.png) 30% repeat;
+    border-style: outset;
+    list-style-image: url(/assets/ramen64x64.gif);
+    list-style-position: outside;
     float: right;
+    background-image: url(/assets/glittergeist.gif);
+}
+
+#leftbottom {
+    padding: 2px;
+    border-width: 40px;
+    border-image: url(/assets/border.png) 30% repeat;
+    border-style: outset;
+    float: left;
+
+    background-image: url(assets/stars-sparkle.gif);
+
+    color: wheat;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 
-#background {
-    background-color: lightpink;
+.borderDiv {
+    
+    padding: 2px;
+    border-width: 40px;
+    border-image: url(/assets/border.png) 30% repeat;
+    border-style: outset;
+    
+    
 }
 
+#terminal {
+    
+    
+    border-color: black;
+    border-style: solid;
+    border-style: inherit;
+    font-size: 15px;
+    
+    
+}
 
-#colorchange {
-    background-color: pink;
-    border-radius: 20px;
-    border-style: dashed;
-    
-    
+audio::-webkit-media-controls-panel, video::-webkit-media-controls-panel {
+                background-color: rgb(224, 125, 211);
+                
 }

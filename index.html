@@ -3,43 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Griphcodes computer</title>
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio Idea</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+
+<audio id="myaudio" controls autoplay>
+  <source src="assets/music/kuchizuke.mp3" type="audio/mp3">
+</audio>
+
+<script>
+    var audio = document.getElementById("myaudio");
+    audio.volume = 0.7
+
+    audio.style.display = "none";
+</script>
+
 </head>
-<body id="background">
+<body>
 
+    <div style="background-color: gray;" id="showtrack">
+        <marquee style="background-image: url(assets/starynight.gif); color: white;" behavior="scroll" direction="left">🎶Track: Plastic Tree - くちづけ</marquee>
+    </div>
 
-<div id="nav">
-    <ul>
-        <li style="list-style: none;">
+    
+    <div class="borderDiv">
+    <div  id="navigation">
+
+        <img style="float: right;" onclick="" width="70" src="assets/kirbyvibe.gif" alt="Music">
+        
+        
+        </img>
+        
+        <ul>
+            <li>
             <a href="/">Home</a>
-            <a href="/projects">Projects</a>
-            <a href="/about">About</a>
-        </li>
+            </li>
+            <li>
+                <a href="/projects">Projects</a>
+            </li>
+            <li>
+                <a href="/about">About</a>
+            </li>
+            <li>
+                <a href="blog/index.rss">Blog</a>
+            </li>
+         </ul>
+
+         <button style="background-color: yellowgreen;" id="press">Press for something fun</button>  <h3 id="surprise"></h3>
+         
+          <img style="float: right;" src="assets/linux-tux.gif" alt="LINUX SIGMA">
+        
+    </div>
+    </div>
+
+    <br><br>
+
+    <div class="borderDiv">
+    <div id="main">
+        
+        <h2>Griphcode</h2>
+
+        <p>Hello my name is griphcode. I am a student that attends Web development and programming classes.
+            I have a big passion for creating digital stuff. I Mainly focus on web development because i find that it's really interesting how you can create awesome websites like this exactly like how you would paint a painting.
+            
+        </p>
+        <div id="terminal">
+        <pre><code style="background-color: #1d1f21;" class="language-javascript">
+            const Passion = "Programming";
+            const Name = "Griphcode";
+            let Age = 17.5;
+        </code></pre>
+        </div>
+
+       
+        
+        
+         
+         <img src="assets/DancingGirl.gif" alt="Link">
+
 
         
-    </ul>
+         
+        
+    </div>
+    </div>
 
     
-</div>
+
+    <div id="bottom">
+         
+        <ul>
+            <li>
+                <a href="https://github.com/griphcode.dev">Github</a>
+            </li>
+             <li>
+                <a href="https://discord.gg/yAzmXgvfWe">Discord</a>
+            </li>
+             <li>
+                <a href="https://youtube.com/@griphcode">Youtube</a>
+            </li>
+        </ul>
+
+        
+            <p>iwasfound</p>
+        
+    </div>
+
+    <div id="commits">
+        <h3>Update Logs!</h3>
+
+        <script>
+const user = "griphcodedev";
+const repo = "YOUR_REPO_NAME";
+const commitsContainer = document.getElementById("commits");
+
+fetch(`https://api.github.com/repos/${user}/${repo}/commits`)
+  .then(res => res.json())
+  .then(data => {
+    commitsContainer.innerHTML = data.slice(0, 5).map(commit => `
+      <div>
+        <strong>${commit.commit.author.name}</strong>: 
+        ${commit.commit.message} 
+        <a href="${commit.html_url}" target="_blank">View</a>
+      </div>
+    `).join('');
+  })
+  .catch(err => console.error(err));
+</script>
+
+       
 
 
-<div id="main">
-<h1>Griphcode</h1>
-<h4>I am a computer science student.</h4>
+    </div>
 
-<img id="blsm" src="blossom.gif" alt="">
-
-</div>
-
-
-
-
-<div id="bottom">
-    
-</div>
-
-
-<script src="main.js"></script>
+    <script src="goofy.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
