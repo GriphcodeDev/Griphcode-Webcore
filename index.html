@@ -67,6 +67,14 @@
         <p>Hello my name is griphcode. I am a student that attends Web development and programming classes.
             I have a big passion for creating digital stuff. I Mainly focus on web development because i find that it's really interesting how you can create awesome websites like this exactly like how you would paint a painting.
             
+
+            
+        </p>
+        <br>
+        
+        <p translate="no">
+            こんにちは、griphcodeです。Web開発とプログラミングのクラスに通っている学生です。
+            デジタルなものを作ることに大きな情熱を持っています。主にWeb開発に力を入れているのは、まるで絵を描くように素晴らしいWebサイトを作れるのが本当に面白いと感じているからです。
         </p>
         <div id="terminal">
         <pre><code style="background-color: #1d1f21;" class="language-javascript">
@@ -110,19 +118,22 @@
         
     </div>
 
-    <div id="commits">
-        <h3>Update Logs!</h3>
 
+
+
+
+    
+    <div id="commits">
         <script>
 const user = "griphcodedev";
-const repo = "YOUR_REPO_NAME";
+const repo = "Griphcode-Webcore";
 const commitsContainer = document.getElementById("commits");
 
 fetch(`https://api.github.com/repos/${user}/${repo}/commits`)
   .then(res => res.json())
   .then(data => {
-    commitsContainer.innerHTML = data.slice(0, 5).map(commit => `
-      <div>
+    commitsContainer.innerHTML = data.slice(0, 5).map(commit => ` 
+    <div>
         <strong>${commit.commit.author.name}</strong>: 
         ${commit.commit.message} 
         <a href="${commit.html_url}" target="_blank">View</a>
@@ -131,10 +142,6 @@ fetch(`https://api.github.com/repos/${user}/${repo}/commits`)
   })
   .catch(err => console.error(err));
 </script>
-
-       
-
-
     </div>
 
     <script src="goofy.js"></script>
