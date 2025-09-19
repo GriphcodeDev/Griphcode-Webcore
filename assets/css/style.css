@@ -1,7 +1,7 @@
 * {
     font-family: cursive;
-    cursor: url(https://cur.cursors-4u.net/anime/ani-6/ani549.cur), auto !important;
     
+    cursor: url(https://cur.cursors-4u.net/mechanics/mec-5/mec443.cur), auto !important;
 }
 
 
@@ -22,18 +22,17 @@ body {
 #main {
     color: white;
     font-weight: bold;
-    background-image: url(assets/images/sparkles.gif);
     
 }
 
 #bottom {
-    padding: 2px;
+    padding: 20px;
+    margin-top: 20px;
     border-width: 40px;
     border-image: url(/assets/images/border.png) 30% repeat;
     border-style: outset;
     list-style-image: url(/assets/images/ramen64x64.gif);
     list-style-position: outside;
-    float: right;
     background-image: url(/assets/images/glittergeist.gif);
 }
 
@@ -42,12 +41,13 @@ body {
     border-width: 40px;
     border-image: url(/assets/images/border.png) 30% repeat;
     border-style: outset;
-    float: left;
+    
     
 
-    background-image: url(assets/images/stars-sparkle.gif);
-
+    background-color: rgb(53, 49, 49);
     color: wheat;
+
+    margin-top: 20px;
 }
 
 a {
@@ -63,19 +63,14 @@ a {
     border-width: 40px;
     border-image: url(/assets/images/border.png) 30% repeat;
     border-style: outset;
+    margin-top: 20px;
+
+    background-color: rgb(0, 0, 0);
     
     
 }
 
-#drawing {
-    color: black;
-     padding: 2px;
-    border-width: 40px;
-    border-image: url(/assets/images/border.png) 30% repeat;
-    border-style: outset;
 
-    background-color: white;
-}
 
 #password {
     color: transparent;
@@ -84,7 +79,8 @@ a {
 #password:hover {
     background-color: black;
     color: yellow;
-}
+    font-size: large;
+    cursor: url(https://cur.cursors-4u.net/anime/ani-6/ani549.cur), auto !important;}
 
 #terminal {
     
