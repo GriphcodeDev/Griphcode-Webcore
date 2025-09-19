@@ -20,7 +20,7 @@ const ShowLink = document.getElementById("showLink");
         BookPage.style.color = "green";
         BookPage.innerHTML = ShowText.innerHTML = "<h3>Right password</h3>";
         
-        BookPage.innerHTML = ShowLink.innerText = "";    
+           
    }
    else {
         alert("Wrong Password");
@@ -35,6 +35,7 @@ ButtonPress.addEventListener("click", () => {
         Goofy.style.color = "green";
         Goofy.style.border = "outset";
         Goofy.style.textAlign = "center";
+        Goofy.style.backgroundColor = "black";
 
 });
 

@@ -1,19 +1,19 @@
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: cursive;
     cursor: url(https://cur.cursors-4u.net/anime/ani-6/ani549.cur), auto !important;
-    
     
 }
 
+
 body {
-    background-image: url(assets/starynight.gif);
+    background-image: url(/assets/images/starynight.gif);
     
 }
 
 
 
 #navigation {
-    list-style-image: url(/assets/listitemrezise.gif);
+    list-style-image: url(/assets/images/listitemrezise.gif);
     font-weight: bold;
     background-color: darkblue;
     
@@ -22,30 +22,30 @@ body {
 #main {
     color: white;
     font-weight: bold;
-    background-image: url(assets/sparkles.gif);
+    background-image: url(assets/images/sparkles.gif);
     
 }
 
 #bottom {
     padding: 2px;
     border-width: 40px;
-    border-image: url(/assets/border.png) 30% repeat;
+    border-image: url(/assets/images/border.png) 30% repeat;
     border-style: outset;
-    list-style-image: url(/assets/ramen64x64.gif);
+    list-style-image: url(/assets/images/ramen64x64.gif);
     list-style-position: outside;
     float: right;
-    background-image: url(/assets/glittergeist.gif);
+    background-image: url(/assets/images/glittergeist.gif);
 }
 
 #commits {
     padding: 2px;
     border-width: 40px;
-    border-image: url(/assets/border.png) 30% repeat;
+    border-image: url(/assets/images/border.png) 30% repeat;
     border-style: outset;
     float: left;
     
 
-    background-image: url(assets/stars-sparkle.gif);
+    background-image: url(assets/images/stars-sparkle.gif);
 
     color: wheat;
 }
@@ -53,6 +53,7 @@ body {
 a {
     color: white;
     text-decoration: none;
+    cursor: grab;
 }
 
 
@@ -60,7 +61,7 @@ a {
     
     padding: 2px;
     border-width: 40px;
-    border-image: url(/assets/border.png) 30% repeat;
+    border-image: url(/assets/images/border.png) 30% repeat;
     border-style: outset;
     
     
@@ -70,14 +71,18 @@ a {
     color: black;
      padding: 2px;
     border-width: 40px;
-    border-image: url(/assets/border.png) 30% repeat;
+    border-image: url(/assets/images/border.png) 30% repeat;
     border-style: outset;
 
     background-color: white;
 }
 
+#password {
+    color: transparent;
+}
+
 #password:hover {
-    background-color: darkblue;
+    background-color: black;
     color: yellow;
 }
 
@@ -104,20 +109,27 @@ a {
 
 
 #intro:hover {
-    
+    background-color: red;
 }
 
 
-
+.musicbuttons button {
+    display: block;
+    float: right;
+    
+}
 
 
 .assetlib {
     padding: 1px;
     border-width: 40px;
-    border-image: url(/assets/terminal.png) 30% repeat;
+    border-image: url(/assets/images/terminal.png) 30% repeat;
     border-style: outset;
     background-color: darkblue;
-    
-    
 }
 
+
+#social-links {
+    background-color: blue;
+    position: sticky;
+}

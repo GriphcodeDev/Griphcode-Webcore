@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Griphcodes computer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/assets/DancingGirl.gif" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets//images/linux-tux.gif" type="image/gif">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
 
@@ -16,37 +16,30 @@
 
 <!-- Audio handling -->
 
-<audio id="myaudio" controls autoplay>
-  <source src="assets/music/kuchizuke.mp3" type="audio/mp3">
-</audio>
-
-<script>
-    var audio = document.getElementById("myaudio");
-    audio.volume = 0.9
-
-    audio.style.display = "none";
-</script>
 
 </head>
 <body id="changePage">
 
     <div id="visibiltyOfPage">
         <h3 style="color: white;" id="showText"></h3>
-        <a id="showLink" href="https://galacticjourney.org/stories/I_Have_No_Mouth_and_I_Must_Scream_-_Harlan_Ellison.pdf"></a>
+        <a id="showLink" target="_blank" href="https://galacticjourney.org/stories/I_Have_No_Mouth_and_I_Must_Scream_-_Harlan_Ellison.pdf"></a>
     </div>
 
     <div style="background-color: gray;" id="showtrack">
-        <marquee style="background-image: url(assets/starynight.gif); color: white;" behavior="scroll" direction="left">🎶Track: Plastic Tree - くちづけ</marquee>
+        <marquee id="track" style="color: white; font-family: cursive;" behavior="scroll" direction="left"></marquee>
     </div>
 
     
     <div class="borderDiv">
     <div  id="navigation">
 
-        <img style="float: right;" onclick="" width="70" src="assets/kirbyvibe.gif" alt="Music">
+    <div id="musicbuttons">
         
+        <button id="song1">Play: Plastic Tree - くちづけ</button>
+        <button id="song2">Play: Duran Duran - Invisible</button>
+        <button id="song3">Play: Machine Girl - Lilith</button>
         
-        </img>
+        </div>
 
         <iframe src="https://free.timeanddate.com/clock/ia2nbdch/n291/fn7/fs18/fcfff/tc22d/ftb/bls0/brs0/bts4/btc00b" frameborder="0" width="115" height="32"></iframe>
 
@@ -68,7 +61,7 @@
 
          <button style="background-color: yellowgreen;" id="press">Press for something fun</button>  <h3 id="surprise"></h3>
          
-          <img style="float: right;" src="assets/linux-tux.gif" alt="LINUX SIGMA" id="tux">
+          <img style="float: right;" src="assets/images/linux-tux.gif" alt="LINUX SIGMA" id="tux">
         
     </div>
     </div>
@@ -104,7 +97,7 @@
         
         
          
-         <img class="assetlib" src="assets/DancingGirl.gif" alt="Link">
+         <img class="assetlib" src="assets/images/DancingGirl.gif" alt="Link">
 
 
         
@@ -117,20 +110,21 @@
 
     <div id="bottom">
          
-        <ul>
+        
+        <ul id="social-links">
             <li>
-                <a href="https://github.com/griphcode.dev">Github</a>
+                <a target="_blank" href="https://github.com/griphcode.dev">Github</a>
             </li>
-             <li>
-                <a href="https://discord.gg/yAzmXgvfWe">Discord</a>
+            <li>
+                <a target="_blank" href="https://discord.gg/yAzmXgvfWe">Discord</a>
             </li>
-             <li>
-                <a href="https://youtube.com/@griphcode">Youtube</a>
+            <li>
+                 <a target="_blank" href="https://youtube.com/@griphcode">Youtube</a>
             </li>
         </ul>
-
         
-            <p style="color: black;" id="password">iwasfound</p>
+        
+            <p id="password">iwasfound</p>
         
     </div>
 
@@ -168,7 +162,8 @@
 
     
 
-    <script src="goofy.js"></script>
+    <script src="assets/js/goofy.js"></script>
+    <script src="assets/js/song.js"></script>
     <script>hljs.highlightAll();</script>
 </body>
 </html>
